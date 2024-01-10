@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:wght@300;400;500;700&family=Righteous&family=Sora:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <title>Previsão do Tempo</title>
+</head>
+
+<body>
+    <div class="mainBox">
+        <div class="upBox">
+            <input class="cityInput" placeholder="Digite o nome da cidade">
+            <input class="codeCountry" placeholder="BR">
+            <button class="searchButton" onclick="buttonClick()">
+                <img class="imgButton" alt="buscar" src="https://www.svgrepo.com/show/488200/find.svg">
+            </button>
+        </div>
+
+        <h2 class="cities">Tempo em São Paulo</h2>
+        <p class="temp">21°</p>
+        <div id="tempTarget">
+            <div class="tempMin">
+                <h5>temp-min:</h5>
+                <h5 id="minimum"> 20°</h5>
+            </div>
+            <div class="tempMax">
+                <h5>temp-max:</h5>
+                <h5 id="maximum"> 20°</h5>
+            </div>
+        </div>
+
+        <div class="weatherCondition">
+            <div class="btnAnimation">
+                <img class="imgWeather" alt="icone-info-tempo" src="https://openweathermap.org/img/wn/04n.png">
+                <p class="textForecast">Nublado</p>
+            </div>
+            <div class="btnAnimation1">
+                <img class="imgWeather" alt="icone-info-tempo" src="https://openweathermap.org/img/wn/04n.png">
+                <p class="textForecast">Nublado</p>
+            </div>
+
+        </div>
+
+        <footer>
+            <div class="feelsLike">
+                <h5>Sensação térmica:</h5>
+                <h5 id="feeling">20</h5>
+            </div>
+            <p class="humidity">Umidade 76%</p>
+        </footer>
+
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
